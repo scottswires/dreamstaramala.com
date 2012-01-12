@@ -29,7 +29,7 @@
 <body <?php $page_slug = $post->post_name; body_class($page_slug); ?>>
 <div id="sky_bg">
 <div id="header_bg">
-<a id="workshops_callout"></a>	
+<a id="workshops_callout">Amala presents Workshohps with<h2>Mohomed Shahin!</h2></a>	
 	<?php roots_wrap_before(); ?>
 	<div id="wrap" class="container" role="document">
 	<?php roots_header_before(); ?>

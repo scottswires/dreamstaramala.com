@@ -7,8 +7,7 @@
 			</div>	
 		</footer>
 		<?php roots_footer_after(); ?>
-	</div><!-- /#wrap -->
-	
+	</div><!-- /#wrap -->	
 <?php wp_footer(); ?>
 <?php roots_footer(); ?>
 
@@ -16,8 +15,8 @@
 		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
 		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
-<div id="footer_wrap"></div> <!--  footer wrap -->
 </div> <!--  header_bg  -->
+<div id="footer_wrap"></div>
 </div> <!--  sky_bg  -->
 </body>
 </html>
