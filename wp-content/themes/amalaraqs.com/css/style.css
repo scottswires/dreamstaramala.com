@@ -151,7 +151,10 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ul, ol { 
+	margin: 1em 0; 
+	list-style: none;
+}
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
@@ -243,9 +246,13 @@ td { vertical-align: top; }
 }
 #nav-main ul li {
 	float: left; 
-	margin: 0; 
-	*zoom: 1; } 
-#nav-main ul li:hover { position: relative; }
+	margin: 0 25px 0 0; 
+	height: 55px;
+	*zoom: 1; 
+} 
+#nav-main ul li:hover { 
+	position: relative; 
+}
 #nav-main ul li a { 
 	text-decoration: none; 
 	display: block; 
@@ -253,12 +260,15 @@ td { vertical-align: top; }
 	color: #4d3e0e;
 	font-family: Windsong;
 	font-weight: normal;
+	height: 55px;
 }
 #nav-main ul li a:hover, 
 #nav-main ul li.current-menu-item > a, 
 #nav-main ul li.current-menu-parent > a, 
 #nav-main ul li.current-menu-ancestor > a, 
-#nav-main ul li:hover > a {  }
+#nav-main ul li:hover > a {  
+	background: url('../img/nav_li_bg.png') no-repeat center bottom;
+}
 
 #nav-main ul ul { 
 	position: absolute; 
@@ -458,12 +468,62 @@ blockquote {
    
 #sidebar { 
 	position: relative; 
-	width: 300px;
+	width: 305px;
+	font-size: .85em;
+	text-align: center;
 }
 #sidebar .container { width: auto; padding: 0; }
 #sidebar .widget { clear: both; margin-bottom: 1.5em; }
-#sidebar .widget .gform_wrapper ul { padding: 0; list-style-type: none; }
+#sidebar .widget .gform_wrapper ul { padding: 0; list-style-type: none; top center no-repeat }
 
+.headline {
+	color: #437600;
+	font-weight: bold;
+}
+.sidebar_h2{
+	text-align: center;
+	color: #473400;
+	font-family: windsong;
+	font-size: 1.35em;
+	letter-spacing: .03em;
+}
+h2.birds {
+	background: transparent url(../img/heading_bg.png)top center no-repeat;
+	width: 300px;
+	height: 100px;
+	padding: 75px 0px 0px 0px;
+}
+.date {
+	padding: 15px 0 0 0;
+}
+.sidebar_email_updates {
+	text-align: center;
+	color: #473400;
+	font-family: windsong;
+	font-size: 3em;
+	margin: 30px 0 0 0;
+}
+#dreamstar_brand {
+	background: url('../img/dreamstar_brand.gif') no-repeat center top;
+	width: 190px;
+	height: 71px;
+	margin: 30px 0 0 60px;
+}
+#sidebar_phone {
+	background: url('../img/phone.png') no-repeat left center;
+	padding: 0 0 0 25px;
+}
+#sidebar_email {
+	background: url('../img/quill.png') no-repeat left center;
+	padding: 0 0 0 25px;
+}
+#sidebar_facebook {
+	background: url('../img/facebook.png') no-repeat left center;
+	padding: 0 0 0 25px;
+}
+.sidebar_spacer {
+	padding: 10px 0 0 0;
+}
 
 /* =============================================================================
    Posts
@@ -530,11 +590,8 @@ figure.gallery-item figcaption { display: none; }
 /* =============================================================================
    Footer
    ========================================================================== */
-
-#footer_wrap {
-	background: url('../img/footer_bg.png') no-repeat center bottom;
-	position: fixed;
-	height: 98px;
+#footer_wrap{
+	background: url('../img/footer_bg.png') no-repeat bottom center fixed;
 }
 
 #content-info { clear: both; position: relative; }
