@@ -67,7 +67,8 @@ body {
 }
 #workshops_callout h2{
 	font-weight: bold;
-	font-size: 1.7em;
+	font-family: "Century Gothic",Verdana,Arial,sans-serif;
+	font-size: 1.8em;
 }
 #body_wrap{
 	width: 940px;
@@ -138,23 +139,30 @@ a:active, input.button:active { outline: 0; position: relative; top: 1px; }
 
 abbr[title] { border-bottom: 1px dotted; }
 
-b, strong { font-weight: bold; }
+b, strong { 
+	font-weight: bold; 
+	color: #437600;
+}
 
 blockquote { margin: 1em 40px; }
 
 dfn { font-style: italic; }
 
 h2 {
-	font-family: Windsong;
-	font-size: 3em;
+	font-size: 1.45em;
 } 
 
-h3, h4, h5, h6 {}
+h3 {
+	color: #473400;
+	font-weight: bold;
+} 
+
+h4, h5, h6 {}
 
 h2.main_title {
 	font-family: Windsong;
 	color: #437600;
-	font-size: 3em;
+	font-size: 4em;
 	padding: 0 0 0 40px;
 }
 
@@ -360,10 +368,6 @@ td { vertical-align: top; }
 blockquote {
 	color: #473400;
 }
-.blockquote {
-	width: 480px;
-	margin: 0 10px 30px 50px;
-}
 .blockquote a{
 	color: #473400;
 	text-decoration: underline;
@@ -431,6 +435,9 @@ blockquote {
 #classes_image_caption{
 	text-align: center;
 }
+#classes_blockquote {
+	margin: 0 0 0 40px;
+}
 
 /* =====================
    Events Page 
@@ -460,9 +467,6 @@ blockquote {
 	text-indent: 28px;
 	background: url(../img/list_feather.png) top left no-repeat;
 	line-height: 1.6em;
-}
-.feather_list li strong {
-	color: #437600;
 }
 #events_columns {
 	clear: both;
@@ -502,6 +506,13 @@ blockquote {
 	float: left;
 	margin: 0 15px 0 0;
 }
+.paragraph_indent {
+	margin: 0 0 0 20px;
+}
+#img_hire {
+	background: url('../img/img_hire.jpg') no-repeat center;
+	float: right;
+}
 
 /* =====================
    Gallery Page 
@@ -511,6 +522,37 @@ blockquote {
 /* =====================
    Abzahrah Page
   ===== */
+#abzahrah_company_image {
+   	background: url('../img/abzahrah_promo.jpg') no-repeat;
+   	width: 620px;
+   	height: 417px;
+   	margin: 0 0 30px 20px;
+   } 
+.abz_img {
+   	width: 200px;
+   	height: 300px;
+   	float: left;
+   	margin: 0 20px 0 0;
+   }
+#abz_amala_img {
+	background: url('../img/abz_bio_amala.jpg') no-repeat center;
+   }
+#abz_noorah_img {
+	background: url('../img/abz_bio_noorah.jpg') no-repeat center;
+} 
+#abz_daisy_img {
+	background: url('../img/abz_bio_daisy.jpg') no-repeat center;
+}
+#abz_carmen_img {
+	background: url('../img/abz_bio_carmen.jpg') no-repeat center;
+}
+#abz_detta_img {
+	background: url('../img/abz_bio_detta.jpg') no-repeat center;
+}
+#abz_serayah_img {
+	background: url('../img/abz_bio_serayah.jpg') no-repeat center;
+}
+
     
 /* =====================
    Links Page 
@@ -520,6 +562,16 @@ blockquote {
 /* =====================
    Blog Page 
   ===== */
+
+/* =====================
+   Error Page 
+  ===== */
+  #error_paragraph {
+  	margin: 30px 0 40px 30px;
+  }
+  
+  
+
 /*=============================================================================
    Sidebar
    ========================================================================== */
@@ -587,10 +639,14 @@ h2.birds {
    Posts
    ========================================================================== */
    
-.hentry header { margin-bottom: 1.5em; }
+.hentry header { margin: 30px 0 0 20px; }
 .hentry h1 { line-height: 1.2em; margin-bottom: 0.2em; }
 .hentry h2:first-child { line-height: 1.2em; margin-bottom: 0; }
-.hentry h2 a { text-decoration: none; }
+.hentry h2 a { 
+	text-decoration: none;
+	font-size: .8em;
+	font-family: "Century Gothic",Verdana,Arial,sans-serif; 
+}
 .hentry time { display: block; font-size: 1.2em; position: relative; }
 .hentry p.byline { }
 

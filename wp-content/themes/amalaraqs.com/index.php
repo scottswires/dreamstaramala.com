@@ -4,7 +4,7 @@
 		<?php roots_main_before(); ?>
 			<div id="main" class="<?php echo $roots_options['main_class']; ?>" role="main">
 				<div class="container">
-					<h1><?php _e('Latest Posts', 'roots');?></h1>
+					<h1><?php _e('', 'roots');?></h1><!--Normal string reads "Latest Post" -->
 					<?php get_template_part('loop', 'index'); ?>
 				</div>
 			</div><!-- /#main -->

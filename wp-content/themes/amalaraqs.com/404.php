@@ -4,10 +4,9 @@
 		<?php roots_main_before(); ?>
 			<div id="main" role="main">
 				<div class="container">
-					<h1><?php _e('File Not Found', 'roots'); ?></h1>
-					<div class="error">
-						<p class="bottom"><?php _e('The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'roots'); ?></p>
-					</div>
+					<center><h3 class="paragraph_indent"><?php _e('404 Error - Can\'t find That!', 'roots'); ?></h3></center>
+					<p id="error_paragraph"><span class="paragraph_indent"></span>We're so glad you stopped by, however it seems that the file or page you have requested is either no longer available or it never was. Odds are that you just typed in the URL incorrectly, but if you have any questions feel free to contact the site administrator, <a href="mailto:info@dreamstarstudios.com" title="E-mail Brian">Brian Feister</a>.</p>
+					
 					<p><?php _e('Please try the following:', 'roots'); ?></p>
 					<ul> 
 						<li><?php _e('Check your spelling', 'roots'); ?> </li>
